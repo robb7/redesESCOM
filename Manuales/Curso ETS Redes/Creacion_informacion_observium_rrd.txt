@@ -1,0 +1,40 @@
+1- Ya funcionando la topología en GNS3 entrar con el navegador del S.O. nativo a la ip de Observium(10.0.0.2) y entrar como:
+	user: admin password: Contraseña establecida en la configuración.
+
+2. Dejar que cargue los dispositivos.
+
+3.  Realizar en gns3 ping del s.o. nativo(host) a rcplive.
+
+4. Regresar a Observium y entrar a pestaña "Devices" > "All devices" > Seleccionar rcp live y seleccionar la gráfico de processors.
+
+5. Arriba de la gráfica seleccionar la opción "RRD Command" e ir a la sección "RRDTool Comand" y buscar la ruta del archivo rrd, en este caso para rcplive es /opt/observium/rrd/rcplive/processor-hr-768.rrd
+
+6. Copiar el archivo rrd a carpeta del servidor http(donde se encuentran las páginas) usualmente en /var/www/NOMBRE, puede que este sea un enlace simbólico a otra carpeta.
+
+7. En el s.o. nativo(host) usar wget DIRECCION/ARCHIVO en este caso es:
+
+	wget 10.0.0.2/processor-hr-768.rrd
+
+8. Una vez obtenido el archivo usando cualquier linux instalar rrdtool
+
+	sudo apt-get update
+	sudo apt-get install rrdtool
+
+9. Convertir archivo rrd a xml usando el siguiente comando:
+
+	rrdtool dump NOMBRE_ARCHIVO.rrd > NOMBRE_ARCHIVO.xml
+
+10. A continuación se agregarán datos aleatorios la archivo xml para simular un tiempo de trabajo considerable para el router. Se agregarán número aleatorios usando awk:
+	
+	awk -F '[<|>]' '/max/{u=$3/10} {if (!/<v>NaN</); else a=int(u*rand()) gsub(/<v>NaN</,"<v>"a"<"); print};' NOMBRE_ARCHIVO.xml > NOMBRE_ARCHIVO_NUEVO.xml
+
+Abrir el archivo e ingresar en la primera línea de datos un valor similar a los obtenidos.
+
+11. Convertir NOMBRE_ARCHIVO_NUEVO.xml a rrd:
+
+	rrdtool restore NOMBRE_ARCHIVO_NUEVO.xml NOMBRE_ARCHIVO_NUEVO.rrd
+
+12. Sustituir el nuevo archivo por el antiguo en el directorio de observium. Usando un servidor ftp:
+Copiar archivo:
+	
+

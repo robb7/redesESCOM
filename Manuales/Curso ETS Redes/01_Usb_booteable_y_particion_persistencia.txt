@@ -1,0 +1,47 @@
++---------------------+
+| Crear usb booteable |
++---------------------+
+
+- Abrir terminal y ejecturar:
+	sudo fdisk -l
+E identificar la usb insertada, por ejemplo: /dev/sdX
+(sustituir X por número de usb)
+
+- Desmontar la memoria usb y sus particiones(si tiene)
+	sudo umount /dev/sdX1
+
+- Formatear unidad usb en formato fat32, reemplazando NOMBRE_ETIQUETA por nombre que se asignará a la usb
+	sudo mkfs.vfat -F 32 -n NOMBRE_ETIQUETA /dev/sdX1
+
+- Descomprimir iso y copiar a unidad usb , es importante no especificar partición en memoria usb(número)
+	sudo dd if=/home/usuario/NOMBRE_ISO.iso of=/dev/sdX bs=4M
+
+- Al terminar el proceso estará lista la usb booteable con la distribución.
+
++---------------------------------+
+| Crear partición de persistencia |
++---------------------------------+
+- Abrir gparted y crear partición de persistencia en sistema de archivos ext2, con la etiqueta 'persistence'.
+- Al termina crear un archivo en esta partición llamado 'persistence.conf' donde se especificará los directorios que se deseen persistir.(Es posible se tenga que hace como superusuario).
+Ejemplos de contenido de archivo "persistence.conf":
+	----------------------------------------------
+	Si se agrega:
+
+		/ union
+
+	persistirá todo el sistema de archivos del sistema operativo.
+	----------------------------------------------
+	Si se agrega:
+		/home
+		/opt
+
+	persistirá  solamente esos directorios.
+
+[OPCIONAL]
+Cambiar los derechos de ejecución del archivo:
+	sudo chmod 777 persistence.conf
+
+Y cambiar de dueño el archivo(sustituyendo NOMBRE_USUARIO):
+	sudo chown NOMBRE_USUARIO:NOMBRE_USUARIO persistence.conf
+
+

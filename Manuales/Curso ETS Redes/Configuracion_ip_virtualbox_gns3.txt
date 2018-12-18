@@ -1,0 +1,66 @@
+Crear máquinas virtuales en Virtualbox:
+	Observium
+	Zeroshell
+	RCPLive
+
+Abrir Gns3 > Pestaña 'Edit' > 'Preferences' > Botón 'new' y agregar máquinas virtuales, tildando la opciones de:
+	[] Use as a linked based VM (Experimental)
+	[] Allow GNS3 to use any configured VirtualBox adapter
+
+Agregar más interfaces para RCPLive: Botón 'Edit' > Pestaña 'Networks' > Subir adaptadores hasta 8. 
+
+Crear topología en gns3 con máquina virtual Observium, RCPLive y Host:
+
+				 -------                        
+				[RCPLive] 10.0.0.1 
+				 -------
+				   |
+                   |
+             	   |
+	----        ------          ---------
+   [Host]------[Switch]--------[Observium]
+    ----        ------          ---------
+   10.0.0.3                      10.0.0.2
+                  
+
+
+-------------------------
+Configuración RCPlive
+-------------------------
+Para la configuración de la ip entrar como usuario:'rcp' contraseña: 'rcp' y configurar ip(ejecutar los siguientes comandos):
+	en
+	configure
+	interface ethernet eth0
+	ip address 10.0.0.1/24
+	no shutdown
+	exit
+
+Para persistir los cambios correr:
+	copy run start
+
+Si se desea comprobar la dirección, presionar alt+f5 e iniciará una consola linux en modo root e insertar:
+	ifconfig
+
+Para regresar a interfaz de router alt+f1 y agregar puerta enlance y dns's(Opcional):
+	default-gateway 192.168.1.1
+	ip name-server 8.8.8.8
+	name-server 8.8.4.4
+
+Para configurar router con interfaz gráfica a través del navegador, entrar por medio del navegador del so(host) e introducir la ip del router, introducir usuario y contraseña y entrar.
+
+----------------------
+Configuración de host
+----------------------
+Para configurar la ip conectar el host en la interfaz 'tap0' de la máquina(si no está disponible instalarla) y configurar la interfaz en la consola real del S.O.:
+
+	sudo ifconfig tap0 10.0.0.3/24
+
+---------------------------
+Configuración Observium
+--------------------------
+Para configurar ip de Observium seguir los pasos indicados al iniciar el s.o. virtual. Y entrar por medio del navegador del s.o.(host) a la ip configurada en el Observium, entrar con usuario:admin y contraseña: indicada en configuración.
+
+Entrar a rcplive por el navegador a su dirección 10.0.0.1 y habilitar snmp versión 2.
+
+Regresar a observium y agregar dispositivos para administrar, en este caso rcplive para que trabaje con snmp versión 2.
+

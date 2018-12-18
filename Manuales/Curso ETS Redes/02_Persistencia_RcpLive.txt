@@ -1,0 +1,48 @@
++----------+
+
+Iniciar RCPlive y presionar alt+f5
+
+Ver el número de partición:
+	fdisk -l
+
+Para crear la tabla de particiones:
+	fdisk /dev/sdX
+
+En la shell de fdisk insertar los siguientes caracteres:
+	o - para crear una nueva tabla de particiones
+	n - agregar una nueva partición y seguir los pasos:
+		p - para partición primaria
+			1 - para partición 1
+				<Enter> - para iniciar en sector default
+	w - para escribir las particiones y salir
+
+formatear disco duro virtual(Importante - poner número de partición):
+	mkfs.ext2 /dev/sdX1
+
+Reiniciar el s.o.:
+	reboot
+
+Entrar a la consola alt+f5
+
+Correr el script para persistencia:
+	persist.sh
+Y seleccionar la partición.
+
+Reiniciar el s.o.:
+	reboot
+
+Configurar 4 tarjetas de red a la maquina virtual:
+	-la primera como adaptador puente - eno1
+	-la segunda como red interna
+	-las demas como no conectado
+
+Clonar la maquina virtual
+
+Configurar 4 tarjetas de red a la maquina virtual:
+	-la primera como red interna
+	-las demas como no conectado
+
+Para regresar a la configuración del Router, presionar alt+f1
+
+Configurar router y al final correr el comando:
+	copy run start

@@ -1,0 +1,11 @@
+-El menu se encuentra haciendo click con el boton derecho sobre el escritorio
+
+-Existe un menu para simulacion que incluye un submenu de simulador (GNS3) y otro de configuracion (virtualBox)
+
+-Existe un menu de red con un comando ifup eth0 necesario para tener internet
+
+-Existe un menu de comandos que incluye uno para montar una USB -> fastmount usb
+
+-Al ingresar a GNS3 pide la contraseña de root dos veces la contraseña es root
+
+-Posiblemente el procedicimiento normal en el examen sea abrir primero virtualbox y despues GNS3
