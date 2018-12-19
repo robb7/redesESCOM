@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'icomoon';
+    src:url('fonts/icomoon.eot?qm14py');
+    src:url('fonts/icomoon.eot?#iefixqm14py') format('embedded-opentype'),
+        url('fonts/icomoon.woff?qm14py') format('woff'),
+        url('fonts/icomoon.ttf?qm14py') format('truetype'),
+        url('fonts/icomoon.svg?qm14py#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* Utilities */
+.u-title{
+    border-bottom: 2px dashed #00CCFF;
+    color: #00CCFF;
+    font-weight: normal;
+    font-size: 1.5em;
+    padding-bottom: .5em;
+    text-align: center;
+}
+.u-containerDefault{
+    /*width: 800px;*/
+    margin: 0 auto;
+}
+/*Main menu: Top Bar */
+.MainMenu{
+    background: #1E1E1E;
+    text-align: center;
+    height: 3.75em;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+.MainMenu-list{
+    margin:0;
+    padding: 0;
+}
+.MainMenu-item{
+    display: inline-block;
+}
+.MainMenu-link{
+    color: #00DBFF;
+    text-decoration: none;
+    line-height: 3.75em;
+    margin-right: 1.5em;
+}
+#me:before{
+    font-family: 'icomoon';
+    content: "\e600";
+    color: #00DBFF;
+}
+#perfil:before{
+    font-family: 'icomoon';
+    content: "\e606";
+    color: #00DBFF;
+}
+#trabajo:before{
+    font-family: 'icomoon';
+    content: "\e605";
+    color: #00DBFF;
+}
+#contacto:before{
+    font-family: 'icomoon';
+    content: "\e603";
+    color: #00DBFF;
+}
+
+.top {
+  height: 200px;
+  background-image: url("../img/top.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wrap{
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.perfil h3{
+  font-size: 40px;
+  text-align: justify;
+}
+.perfil img{
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+  margin-bottom: 50px;
+  float: right;
+
+}
+.habilidades{
+
+  color: #FE9720;
+  text-align: center;
+}
+.habilidades td{
+  padding-right: 15px;
+}
+
+#NameHability{
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+progress {
+    padding-top: 10px;
+    border: 0;
+    height: 40px;
+    border-radius: 20px;
+    width: 400px;
+}
+progress::-webkit-progress-bar {
+    border: 0;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #48483E;
+}
+progress::-webkit-progress-value {
+    border: 0;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #6CC72C;
+}
+progress::-moz-progress-bar {
+    border: 0;
+    height: 20px;
+    border-radius: 20px;
+}
+
+#boton{
+  text-align: center;
+  color: white;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #272822;
+}

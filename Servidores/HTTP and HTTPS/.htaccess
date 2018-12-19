@@ -1,0 +1,21 @@
+#Errores Personalizados
+ErrorDocument 404 /404.html
+ErrorDocument 403 /403.html
+ErrorDocument 500 /500.html
+
+#Bloqueo por ip 
+Order Deny,Allow
+Deny from 192.168.0.151
+
+#Se permite el acceso a todos para que puedan ver la pagina de 403 
+<Files 403.html>
+  Allow from all
+</Files>
+
+#Autentificacion
+AuthType Basic
+AuthName "My Protected Area"
+AuthUserFile /etc/apache2/.htpasswd
+Require valid-user
+
+
