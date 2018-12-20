@@ -1,0 +1,22 @@
+Instalacion observium.
+
+1.- Descargar el.ova de obsevium de la pagina oficial https://www.turnkeylinux.org/observium
+
+2.- Una vez iniciado se selecciona la primera opcion del grub que es turnkey-observium
+
+3.- Se pedirá una contraseña para root con las caracterìsticas que se maran ahì, en este caso pondremos: Admin123
+
+4.- Se pedirá la contraseña para el gestor de base de datos mysql, en este caso pontremos la misma que para root: Admin123
+
+5.- Se pedirá la ocntraseña ara observum, en este caso utilizaremos nuevamente la misma: Admin123
+
+6.- Se pedirà inicialiar hub services, a lo cual le daremos skip.
+
+7.- Se pedirà un email para notificaciones, le daremos skip
+
+8.- Se instalan las ultimas actualizaciones de seguridad
+
+9.- En el menú avanzado se configura la red seleccionando si se quiere hace mediante DHCP o IP estatica
+
+	9.1 En caso de ser por Ip estatica se debe seleccionar y agregar manualmente la ip que se le asignará, la mascara e re y la gateway,
+		finalmente se sale del menú avanzao y ya estaŕa corriendo observium para entrar dese cualquer navegaor web

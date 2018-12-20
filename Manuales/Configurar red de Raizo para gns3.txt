@@ -1,0 +1,24 @@
+Configurar red de Raizo para gns3
+
+1.- abrir terminar en raizo y teclear los sigueintes comandos para crear una interfaz tap
+	
+		sudo tunctl -user -y tap0
+
+2.- levantamos la interfaz y posteriormente le agregamos ip con su mascara de red segú de pinta en la topología de gns3
+
+		sudo ifconfig tap0 up
+
+		sudo ifconfig tap0 [ip/mask] up
+
+		en donde [ip/mask] se sustituye por la ip y la mascara de red que se asigne por ejemplo: sudo ifconfig tap0 10.0.0.1/24 up
+
+3.- Se agrega la defalt gateway para que sea la misma que se le asignará en gns3.
+
+		sudo route add default gw [ip de la gateway] tap0
+
+		Ejemplo: sudo route add default gw 10.0.0.254 tap0 
+
+4.- En gns3 agregar una maquina LiveRaizo que va a ser nuestra propia pc, con el botón secundario se le da click y se selecciona configure
+		En la pestaña TAP interfaces se agrega se agrega la interfza tap0 que se creó
+
+5.- Finalmente al momento de conectar la maquina LiveRaixo en gns3, se selecciona tap0.

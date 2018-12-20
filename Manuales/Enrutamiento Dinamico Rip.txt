@@ -1,0 +1,35 @@
+Enrutamiento Dinamico Rip
+
+Nota: Los routers ya deben tener sus interfaces configuradas(de preferencia)
+
+1.- Se accede a la terminal del router, teclan usuario y contraseña RCP
+
+2.- Se accede a modo superusuario y a la configuracion del router
+
+	enable
+	conf
+
+3.- Accedemos a la configuracion del enrutamiento rip
+
+	router rip
+
+4.- Una vez que se está con la configuraion de rip, se procese a declarar todas las redes que conoce ese router por estar conectadas directamente a el.
+	Para declarar un red es así
+	
+	network [red/mask]
+
+	por ejemplo suponinedo que tiene dos interfaces conectadas una con ip y mascara de red 10.0.0.254/24 y la otra 20.0.0.254/24,
+	entonces las redes que conoce son 10.0.0.0/24 y 20.0.0.0/24 (cons u respectiva mascara de red) y su enrutamiento sería de la siguiente manera:
+
+		network 10.0.0.0/24
+		network 20.0.0.0/24
+
+5.- Ejecutamos el comando
+	
+		exit
+
+	para salir de la configuracion el enrutamiento rip
+
+6.- finalmnete se guarda la confguracion con:
+	
+		copy running-config startup-config

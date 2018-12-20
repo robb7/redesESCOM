@@ -1,0 +1,15 @@
+Agregar rcp100 a Gns3
+
+Nota: Ya debe de existir la maquina virtual del rcp100 con ¡persistencia!
+
+1.- Se bre gns3 y nos dirigimos al menú Edit -> Preferences...
+
+2.- En la ventana que se abrió seleccionamos VirtualBox VM's y amos click en New
+
+3.- Seleccionamos la maquina virtual el rcp100 de la lista y damos click en Finish
+
+4.- Aparecera nuestra nueva maquina virtual con rcp100 en la lista, la seleccionamos y damos click en Edit
+
+5.- Seleccionamos en symbol de router y la category igualmente en router
+
+6.- Damos click en OK, Apply y Ok; y ya tenemos RCP100 gregado

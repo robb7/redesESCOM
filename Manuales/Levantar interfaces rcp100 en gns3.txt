@@ -1,0 +1,30 @@
+Levantar interfaces rcp100 en gns3.
+
+1.- Se inicia el router que se desea configurar en el gns3.
+
+2.-	Se accede a través del usuario RCP y password RCP.
+
+3.- Se tecleael siguiente comendo paa acceer como superusuario
+	
+	enable
+
+4.- Se entra a la configuracion del router con el siguiente comando
+	
+	conf
+
+5.- Para entrar a la onfiguracionde una interfaz ethernet especifica en este caso eth0
+
+	interface ethernet eth0
+
+6.- Para asignarle un ip, mascara ed red y levantar la interfaz
+
+	ip address [ip] [mask]
+	no shutown
+	exit
+
+	donde ip es la ip que se le asigna y mas la mascara de red. Ejemplo: ip address 10.0.0.254 255.255.255.0
+	el comando exit es para salir de la configuracion de esa interfaz
+
+7.-Términadas las configuraciones se guara a configuracion para no perderla al apagar y volver a prender el router
+
+	copy running-config startup-config

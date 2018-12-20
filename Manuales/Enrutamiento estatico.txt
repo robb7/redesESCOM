@@ -1,0 +1,24 @@
+Enrutamiento estatico
+
+Nota: los routers ya deben tener sus interfces configuradas
+
+1.- Acceder a la terminar del router y poner RCP en usuario y contrseña
+
+2.- Activar el modo superusuario y entrar a la configurcion del router
+
+	enable
+	conf
+
+3.- Decirle al router las redes que debe conocer y a través de que salto lo hará
+
+	ip route [red/mask] [ip del siguiebte salto]
+
+	por ejemplo: se tiene que este router tiene una interfaz 10.0.0.254/24 y quiere conocer la red 20.0.0.0/24,
+	para esto existe otro router con una interfa conectada a la red 10.0.0.0/24 por su interfaz 10.0.0.253/24
+	y tiene otra interfaz conectada a la 20.0.0.0/24, por lo que el comando de enrutamiento del primer router sería el siguiente:
+
+		ip route 20.0.0.0/24 10.0.0.253
+
+4.- para finalizar se guardan los cambios con:
+
+	copy running-config startup-config
