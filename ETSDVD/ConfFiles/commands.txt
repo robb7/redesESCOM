@@ -1,0 +1,25 @@
+## CheatCode Sheet: 
+## El siguiente archivo contiene comandos utilizados en los manuales
+## guardados en un solo archivo para mejor consulta. 
+
+
+### Configuracion de IP Estatica  Ubuntu server 
+# This file is generated from information provided by
+# the datasource.  Changes to it will not persist across an instance.
+# To disable cloud-init's network configuration capabilities, write a file
+# /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg with the following:
+# network: {config: disabled}
+
+#dhcp4: true
+network:
+    ethernets:
+        enp0s3:
+            dhcp4: no
+            addresses: [192.168.1.250/24]
+            gateway4: 192.168.1.254
+            nameservers:
+              addresses: [192.168.1.250,8.8.8.8,8.8.4.4]
+
+    version: 2
+
+
