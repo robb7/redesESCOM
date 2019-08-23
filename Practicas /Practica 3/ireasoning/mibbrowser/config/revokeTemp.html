@@ -1,0 +1,30 @@
+<html>
+
+<body bgcolor=white font>
+
+<h1>Revoke License File</h1>
+      <p>
+    <form action="http://www.ireasoning.com/send_email.php" method="POST">
+        <input type="hidden" size="22" name="subject" value="Revoke License">
+        <input type="hidden" size="22" name="version" value="#VERSION#">
+        <input type="hidden" size="22" name="os" value="#OS#">
+        <input type="hidden" size="22" name="id" value="#ID#">
+        <input type="hidden" size="22" name="revoke" value="true">
+
+      <table border=0 cellpadding="3" cellspacing="5">
+      <tr> <td><b>Your Email:</b></td><td><input type="text" size="22" name="from" value="#EMAIL#" ></td></tr>
+      <tr> <td><b>Computer Name:</b></td><td><input type="text" size="22" name="computer" value="#COMPUTER#"></td></tr>
+      <tr> <td><b>Company Name:</b></td><td><input type="text" size="22" name="company" value="#COMPANY#"></td></tr>
+      <tr> <td><b>Order Reference Number:</b></td><td><input type="text" size="22" name="order" value="#ORDER#"></td></tr>
+      <tr><td colspan=2 > &nbsp; </td> </tr>
+      <tr><td colspan=2 align=center>
+            <input type="submit" value="Submit"> &nbsp; &nbsp; &nbsp;  <input type="reset" value="Reset">
+      </td>
+      </tr>
+      </table>
+      <p>
+    </form>
+
+</body>
+</html>
+

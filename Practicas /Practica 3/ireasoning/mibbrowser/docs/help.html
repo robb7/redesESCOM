@@ -1,0 +1,4135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+<style>
+.roundcpanel { -moz-border-radius:2px; -webkit-border-radius:2px; border-radius:2px; background:#FFF url('../images/tower-bg.png') repeat-x scroll 0 0; position:relative; z-index:1;  border:1px solid #DDDDDD; padding:5px; width:800px;  margin:0 auto;}
+.roundcpanel-selected { -moz-border-radius:5px; -webkit-border-radius:5px;border-radius:5px; -moz-box-shadow:0 0 5px #AAAAAA; -webkit-box-shadow:0 0 5px #AAAAAA; box-shadow:0 0 5px #AAAAAA; border:1px solid #A0C867; background:#FFF url('../images/tower-selected.png')  repeat-x scroll 0 bottom; z-index:2; top:4px;  }
+.roundcpanel-gray { -moz-border-radius:5px; -webkit-border-radius:5px;border-radius:5px; -moz-box-shadow:0 0 5px #AAAAAA; -webkit-box-shadow:0 0 5px #AAAAAA; box-shadow:0 0 5px #AAAAAA; border:1px solid #A0C867; background:#FFF repeat-x scroll 0 bottom; z-index:2; top:4px;  }
+
+
+hr{
+height:1px;border:none;border-top:1px dashed #75AF2D;
+}
+
+h1{
+	margin: 0;
+    padding: 10px 0 10px 0;
+	font-size: 2.4em;
+	text-shadow: 0 1px 0 #fff;
+    text-align:center;
+    color:green;
+}
+h2{
+margin: 0;
+padding: 0px 0 10px 0;
+color:green;
+font-size: 1.5em;
+text-shadow: 0 1px 0 #fff;
+border-top: 1px dashed #75AF2D;
+}
+h3{
+margin: 0;
+padding: 0px 0 10px 0;
+color:#0C5400;
+font-size: 1.3em;
+text-shadow: 0 1px 0 #fff;
+border-top: 1px dashed #eee;
+}
+
+
+table {
+    padding:3px;
+	border-collapse:collapse;
+	/*width:100%;*/
+}
+table td {
+	padding: 5px;
+	border:1px solid #c7b299;
+    font-family:'Lucida Grande','Lucida Sans Unicode',Verdana,sans-serif;
+}
+table th {
+	border:1px solid #c7b299;
+	text-align:center;
+	padding: 5px;
+	background:#4E9258;
+    font-size: 1.1em;
+    color:#fff;
+}
+ul { 
+    list-style-image: url("images/arrow.png") ;
+padding-left: 45px;
+}
+</style>
+</head>
+<body>
+<div class="roundcpanel roundcpanel-gray">
+    <p>
+    </p>
+    <p align="center">
+    <h1 >MIB Browser Version 12 User Guide</h1>
+    </p>
+    <p>
+    </p>
+    <p align="center">
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        The iReasoning MIB browser is a powerful and easy-to-use tool powered by iReasoning <a href="http://ireasoning.com/snmpapi.shtml">SNMP API</a>. MIB
+        browser is an indispensable tool for engineers to manage SNMP enabled network devices and applications. The iReasoning MIB browser allows users to load
+        standard, proprietary MIBs, and even some mal-formed MIBs. It also allows them to issue SNMP requests to retrieve SNMP agents' data, or make changes to
+        agents. A built-in trap receiver can receive and process SNMP traps according to its rule engine.
+    </p>
+    <p>
+    </p>
+    <p>
+        <h2>Major features:</h2>
+    </p>
+    <p>
+    </p>
+    <ul type="disc">
+        <li>
+            Intuitive GUI
+        </li>
+        <li>
+            Complete SNMPv1, v2c and v3 (USM and VACM) support
+        </li>
+        <li>
+Complete SNMPv3 USM support, including HMAC-MD5, HMAC-SHA1, HMAC_SHA2, CBC-DES, 3-DES, CFB128-AES-128, CFB128-AES-192 and CFB128-AES-256 algorithms
+        </li>
+        <li>
+            Robust and powerful SMIv1/SMIv2 MIB parser
+        </li>
+        <li>
+            IPv6 support
+        </li>
+        <li>
+            Trap Receiver with rule engine to process traps and trigger actions if certain conditions are satisfied
+        </li>
+        <li>
+            Trap Sender
+        </li>
+        <li>
+            Log window to display application log and SNMP packets exchanged between browser and agents
+        </li>
+        <li>
+            Table view for MIB tables
+        </li>
+        <li>
+            SNMPv3 USM user management
+        </li>
+        <li>
+            Port view for network interface cards
+        </li>
+        <li>
+            Switch port mapper for mapping switch ports
+        </li>
+        <li>
+            Performance graph tool for monitoring of numerical OID values
+        </li>
+        <li>
+            Device snapshot
+        </li>
+        <li>
+            Cisco device snapshot
+        </li>
+        <li>
+            Ping and traceroute tools
+        </li>
+        <li>
+            Network discovery tool
+        </li>
+        <li>
+            SNMP Agents Comparison
+        </li>
+        <li>
+            Bookmarks
+        </li>
+        <li>
+            Runs on Windows, Mac OS X, Linux and other UNIX platforms
+        </li>
+    </ul>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <h2>Requirements</h2>
+    </p>
+    <p>
+    </p>
+    <ul type="disc">
+        <li>
+            Windows, Mac OS X, Linux and other UNIX platforms.
+        </li>
+    </ul>
+    <b>
+        <br clear="all"/>
+    </b>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <h2>Download and Run MIB Browser</h2>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        1. Download <a href="http://ireasoning.com/mibbrowser.shtml">MIB browser installer or zip file</a>. On Windows, run setup.exe to install MIB
+        browser. On Mac OS X, Linux and other UNIX platforms, unzip it to the desired directory.
+    </p>
+    <p>
+    </p>
+    <p>
+        2. Run MIB Browser:
+    </p>
+    <p>
+    </p>
+    <ul type="disc">
+        <li>
+            On <b>Windows</b>, click on the MIB browser icon to start browser.
+        </li>
+        <li>
+            On <b>Linux/UNIX</b>, enter MIB browser home directory and run <b><i>browser.sh</i></b> to start browser.
+        </li>
+        <li>On Mac OS X (10.8 or later), download mibbrowser.pkg and run this command in terminal to install it to "/Applications" :<br>
+                <div align="center"><i> sudo installer -store -pkg mibbrowser.pkg  -target /  </i></div>
+                <p>
+        If trap receiver is bound to a port under 1024, open a terminal and run <br>
+        <div align="center"><i> sudo "/Applications/MIB Browser.app/Contents/browser.sh" </i></div> <br>
+         to start MIB browser with root privilege. <p>
+        On earlier versions of Mac OS X, download and unzip mibbrowser.zip, and enter ireasoning/mibbrowser directory and run <b><i>browser.sh</i></b> to start MIB
+            browser.
+        </li>
+    </ul>
+    <p>
+        On Linux/UNIX, if you login as a non-root user and need to run trap receiver at port 162 (or any port under 1024), start MIB browser using the following command:
+    </p>
+    <p>
+    </p>
+    <p>
+        <div align="center"><i>sudo browser.sh</i></div>
+    </p>
+    <p>
+    </p>
+    <p>
+        <h2>Enterprise Edition</h2>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        Trap receiver and watches functions run as a system service. Watches function supports action, which means you can configure actions (sending emails or traps)
+        when a MIB object's value violates a pre-configured threshold.
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+On Windows platform, the service starts up automatically. On Linux/MAC OS X, you need to configure system to execute        <i>$INSTALL_DIR/lib/runserver.sh</i> on startup.
+        <br clear="all"/>
+    </p>
+    <p>
+    </p>
+    <p>
+        <h2>The Browser GUI</h2>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+   <h3>Menu</h3>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+    <ul>
+    <li>
+        <b>
+            File menu
+            <br clear="all"/>
+        </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>Load MIB </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        Launch a file dialog for picking one or multiple MIB files. You need to hold CTRL key if you want to select multiple files.
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>MIB Modules</b>
+    </p>
+    <p>
+    </p>
+    <p>
+        List properties of all loaded MIB modules.
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>Server Address (Enterprise Edition Only)</b>
+    </p>
+    <p>
+    </p>
+    <p>
+        By default, MIB browser connects to a local server to get trap and watches data. However, you can change the server address so that it can get the data
+        from somewhere else.
+    </p>
+    <p>
+    </p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>Open Session </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        Open a previously saved session file.
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>Open Graph Data</b>
+    </p>
+    <p>
+    </p>
+    <p>
+        Open a previously saved graph data file.
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>Save Session </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        Save current settings of open tabs to a session file, which can be opened later to restore tabs.
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>Exit </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        Exit browser.
+    </p>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        </li>
+        <li>
+        <b>
+            Edit menu
+            <br clear="all"/>
+        </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                Find in MIB Tree
+    </p>
+    <p>
+    </p>
+    <p>
+        Find a node in the MIB tree.
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                Find in Result Table
+    </p>
+    <p>
+    </p>
+    <p>
+        Find a string in the result table.
+    </p>
+    <p>
+    </p>
+    <p>
+        </li><li> 
+        <b>
+            Operations menu
+            <br clear="all"/>
+        </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>Get </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        Issue SNMP GET request against current agent.  
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>Get Next</b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        Issue SNMP GET-NEXT request against current agent.
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>Get Bulk</b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        Issue SNMPv2c or SNMPv3  GET-BULK request against current agent. If the SNMP agent only supports SNMPv1, then this command will time out.
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>Set</b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        Issue SNMP SET request against current agent.
+    </p>
+    <p>
+    </p>
+    <p>
+        The following window will show up:
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image005.jpg" border="0" height="200" width="299"/>
+    </p>
+    <p>
+    </p>
+    <p>
+        Enter a new value in the <i>"Value"</i> field then click "Ok" button.
+    </p>
+    <p>
+    </p>
+    <p>
+        To set multiple variables, you can hold CTRL key and select multiple rows in the result pane, then choose SET operation.
+    </p>
+    <p>
+    </p>
+    <p>
+        Note:
+    </p>
+    <p>
+    </p>
+    <p>
+        1.      For <i>BITS</i> data type, you need to use mathematical notation for a set of integers, that is, something like <i>{1, 3, 8}</i>.
+    </p>
+    <p>
+    </p>
+    <p>
+        2.      The format for hexadecimal string is (0x[0-9A-Fa-f][0-9A-Fa-f] )+. For instance, 0x12 0xA1 0x30, or 0x12A130
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>Get Subtree</b>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        Issue SNMP GET-NEXT requests to get the whole subtree against current agent.
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>Walk </b>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        Do SNMP walk against current agent.
+    </p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>Table View</b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        Show MIB table data.
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image007.jpg" border="0" height="428" width="354"/>
+    </p>
+    <p>
+    </p>
+    <p>
+        Clicking on this menu item will bring up a new table view window. But first, <a href="#OID">OID field</a> needs to be an OID of a table or entry nodes.
+        For example, it can be <i>ifTable, ifEntry</i> etc.
+    </p>
+    <p>
+    </p>
+    <p>
+        You can press CTRL key and select multiple tabular variables of the same table, then click "Table View". In this way, table view only shows the tabular
+        variables you selected rather than the whole table.
+    </p>
+    <p>
+    </p>
+    <p>
+        Buttons on the toolbar of table view window:
+    </p>
+    <p>
+    </p>
+    <table border="1" cellpadding="0" cellspacing="0" width="480">
+        <tbody>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>Rotate button</b>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p>
+                        Rotate table 90 degrees.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>Refresh button</b>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p>
+                        Refresh table now.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>Export</b>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p>
+                        Export table data to a CSV file.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>Poll button</b>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p>
+                        Refresh table periodically.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>SNMP SET</b>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p>
+                        Perform SNMP SET for selected table cells.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>Create Row</b>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p>
+                        Dynamically create a row. The table must support dynamic row creation, that is, it has a RowStatus or EntryStatus column.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>Delete Row</b>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p>
+                        Dynamically delete the selected row. The table must support dynamic row creation, that is, it has a RowStatus or EntryStatus column.
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>Graph</b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        Plot graph for selected OID. If there is already one graph tab, you will be asked to re-use this tab or open a new tab.
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image009.jpg" border="0" height="244" width="380"/>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        Clicking on this menu item will bring up performance graph window. But first, <a href="#OID">OID field</a> needs to be a numerical OID value or a table
+        column node whose instances are numerical values. For example, it can be <i>sysUpTime, ifOutOctets, and ifOutOctets.1, </i>etc.
+    </p>
+    <p>
+    </p>
+    <p>
+        Buttons on the toolbar:
+    </p>
+    <p>
+    </p>
+    <table border="1" cellpadding="0" cellspacing="0" width="90%">
+        <tbody>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>Export to CSV file</b>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p>
+                        Export chart data to a CSV file.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>Import from CSV file</b>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p>
+                        Import data from a CSV file.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>Save as PNG </b>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p>
+                        Save chart data to a PNG format file.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>Print</b>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p>
+                        Print out the chart.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>Restart</b>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p>
+                        Restart plotting chart.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>Pause</b>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p>
+                        Pause plotting chart.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>Switch</b>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p>
+                        Switch between current view and global view.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>Display trace</b>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p>
+                        Display trace lines.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>Grid</b>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p>
+                        Display grid lines.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>Rate</b>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p>
+                        Display delta instead of raw values.
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+        The polling interval can be changed by clicking the "Set" button.
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+                </li><li> 
+ 
+        <b>
+            Tools menu
+            <br clear="all"/>
+        </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>Trap Sender</b>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        Open trap sender window:
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image011.jpg" border="0" height="515" width="508"/>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        This window allows user to send out SNMPv1/v2c traps or informs.<p>
+        Trap settings can be bookmarked, so that you do not have to enter them again next time.
+    </p>
+    <p>
+    </p>
+    <p>
+        For SNMPv1/v2 trap nodes in the MIB tree, you can right click on them and select "Send Trap" context menu to bring up this window, and the information
+        from the trap node will be used to fill out the default values.
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>Watches</b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        Displays a table of variables being watched.
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image013.jpg" border="0" height="88" width="506"/>
+    </p>
+    <p>
+    </p>
+    <p>
+                          <i>(Professional Edition)</i>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image015.jpg" border="0" height="89" width="518"/>
+    </p>
+    <p>
+    </p>
+    <p>
+                          <i>(Enterprise Edition)</i>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image017.jpg" border="0" height="233" width="513"/>
+    </p>
+    <p>
+    </p>
+    <p>
+                          <i>(Enterprise Edition. Watch's historical data)</i>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <br clear="all"/>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>Add Watch</b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        Add watch item.
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image019.jpg" border="0" height="224" width="503"/>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+                                            <i>(Professional Edition)</i>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image021.jpg" border="0" height="397" width="493"/>
+    </p>
+    <p>
+    </p>
+    <p>
+                                            <i>(Enterprise Edition)</i>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        In enterprise edition, you can configure actions for each watch. Current actions include sending out emails or traps when the watch is in alarm or rearm states.
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>Port View</b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        It shows input/output bandwidth utilization and error percentage of all ports of a node. The tooltips of pie charts show port properties. You can
+        uncheck the checkbox near port's name to ignore its values.
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        The color of pie charts indicates severity levels, and it can be customized on the settings page.
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image023.jpg" border="0" height="464" width="552"/>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <b>
+        <br clear="all"/>
+    </b>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>Switch</b><b> Port</b><b> Mapper</b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        It shows mapping of the devices connected to a managed switch, and similar to the port view, bandwidth utilization of ports is displayed.
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <b>
+            <img src="images/clip_image025.jpg" border="0" height="294" width="576"/>
+        </b>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <b>Configure Settings</b>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <ul>
+        <li>
+            <b>Routers</b>
+            :   IP and community of layer 3 routers, which will be used to retrieve MAC to IP mapping data.
+        </li>
+    </ul>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <ul>
+        <li>
+            <b>Chart Polling Interval</b>
+            : Data polling interval for plotting charts.
+        </li>
+    </ul>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>Device Snapshot</b>
+    </p>
+    <p>
+        Show a snapshot view of available device data, including system info, interfaces, disks, processes, installed software, etc.
+    </p>
+    <p>
+        <img src="images/clip_image027.jpg" border="0" height="483" width="528"/>
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>Cisco Device Snapshot</b>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        Show a snapshot view of Cisco devices.
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image029.jpg" border="0" height="451" width="552"/>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        If you have more OIDs to monitor, you can use the settings screen to add additional OIDs. The values of them will be shown in the "Basic Information"
+        panel.
+    </p>
+    <p>
+    </p>
+    <p>
+        The utilization charts can have two types: meter or pie charts.
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>Log Window</b>
+    </p>
+    <p>
+        Open application log window that displays application's log information. To clear the content, right click on this pane and select "Clear text" menu
+        item.
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>Ping</b>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        Open ping tool window:
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image030.jpg" border="0" height="231" width="379"/>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        Enter an IP address and press "Ping" button. The results will be displayed in the text area.
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>Trace Route</b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        Open traceroute tool window:
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image031.jpg" border="0" height="155" width="316"/>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        Enter an IP address and press "Trace Route" button. The results will be displayed in the text area.
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>Network Discovery</b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        Open LAN discovery tool window:
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image033.jpg" border="0" height="184" width="468"/>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        Enter a subnet IP address such as 192.168.1.0 and then press "Start" button. It can discover all hosts in the subnet. And if SNMP agent is running on a
+        host, its system table will be queried as well.
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>Manage SNMPv3 USM Users</b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image035.jpg" border="0" height="131" width="468"/>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        The initial window displays a list of existing SNMPv3 users. You then can edit user's properties or delete it.
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>Compare Devices</b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        Compare the SNMP values of two devices:
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image037.jpg" border="0" height="327" width="350"/>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        If the values of them are different, the font color is changed to blue:
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image039.jpg" border="0" height="62" width="475"/>
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>Options</b>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        Open options window for customizing MIB browser:
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image041.jpg" border="0" height="449" width="489"/>
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>General tab</b>
+    </p>
+    <p>
+    </p>
+    <table border="1" cellpadding="0" cellspacing="0" width="90%">
+        <tbody>
+            <tr>
+                <td valign="top" width="104">
+                    <p>
+                        <b>SNMP Retries</b>
+                    </p>
+                </td>
+                <td valign="top" width="312">
+                    <p>
+                        Number of retries for SNMP queries.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="104">
+                    <p>
+                        <b>SNMP Timeout</b>
+                    </p>
+                </td>
+                <td valign="top" width="312">
+                    <p>
+                        Timeout value for SNMP queries, in seconds.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="104">
+                    <p>
+                        <b>Lenient Parsing</b>
+                    </p>
+                </td>
+                <td valign="top" width="312">
+                    <p>
+                        If checked, MIB parser will ignores some syntax errors in MIB files.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="104">
+                    <p>
+                        <b>Logging Level</b>
+                    </p>
+                </td>
+                <td valign="top" width="312">
+                    <p>
+                        Logging level of the logger. If it is "DEBUG", the SNMP PDU will be printed in the Log window, but it may degrade the performance of
+                        the MIB browser.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="104">
+                    <p>
+                        <b>Trap</b>
+                        <b> Port</b>
+                    </p>
+                </td>
+                <td valign="top" width="312">
+                    <p>
+                        The port number of trap receiver.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="104">
+                    <p>
+                        <b>Max Token Number</b>
+                    </p>
+                </td>
+                <td valign="top" width="312">
+                    <p>
+                        The maximum number of tokens allowed in the description field of trap receiver. For instance, if the value is 6, then the message
+                        ".iso.org.dod.internet.mgmt.mib-2.interfaces.ifTable.ifEntry.ifAdminStatus.3" will be truncated to
+                        "¡­.mib-2.interfaces.ifTable.ifEntry.ifAdminStatus.3".
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="104">
+                    <p>
+                        <b>Single Tree Root</b>
+                    </p>
+                </td>
+                <td valign="top" width="312">
+                    <p>
+                        If checked, MIB tree will have a single root node, that is, the <i>.iso</i> node. Otherwise, each MIB module has its own root node. MIB
+                        browser needs to be restarted for this option to take effect.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="104">
+                    <p>
+                        <b>Agent's Character Encoding</b>
+                    </p>
+                </td>
+                <td valign="top" width="312">
+                    <p>
+                        For an SNMP agent on a non western language OS, it may return values in a different character encoding. You can change the charset in
+                        order to correctly display values returned from the agent.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="104">
+                    <p>
+                        <b>Max Graph  Data Count</b>
+                    </p>
+                </td>
+                <td valign="top" width="312">
+                    <p>
+                        Maximum number of data in memory of a graph.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="104">
+                    <p>
+                        <b>Non Repeaters</b>
+                    </p>
+                </td>
+                <td valign="top" width="312">
+                    <p>
+                        Non repeaters value for SNMP GET-BULK requests.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="104">
+                    <p>
+                        <b>Max Repetitions</b>
+                    </p>
+                </td>
+                <td valign="top" width="312">
+                    <p>
+                        Max repetitions value for SNMP GET-BULK requests.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="104">
+                    <p>
+                        <b>Minimize to system tray</b>
+                    </p>
+                </td>
+                <td valign="top" width="312">
+                    <p>
+                        If checked, the MIB browser will be minimized to the system tray when you close it.
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <table border="0" cellpadding="0" cellspacing="0" width="557">
+        <tbody>
+            <tr>
+                <td valign="top" width="254" style="border:0px">
+                    <p>
+                        <b>
+                            <img src="images/clip_image043.jpg" border="0" height="356" width="240"/>
+                        </b>
+                    </p>
+                    <p align="center">
+                    </p>
+                    <p align="center">
+                        <i>Single tree root</i>
+                    </p>
+                </td>
+                <td valign="top" width="302" style="border:0px">
+                    <p>
+                        <img src="images/clip_image045.jpg" border="0" height="347" width="288"/>
+                    </p>
+                    <p>
+                         
+                    </p>
+                    <p align="center">
+                    </p>
+                    <p align="center">
+                        <i>Each Module has its own root node</i>
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>Default Values tab</b>
+    </p>
+    <p>
+    </p>
+    <p>
+        This tab allows the user to set default properties for new SNMP agents.
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>Agent tab</b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image047.jpg" border="0" height="225" width="468"/>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        This table stores the properties of visited SNMP agents. You can add or delete agents from this table.
+    </p>
+    <p>
+    </p>
+    <p>
+        For SNMPv1/v2c agents, values of User, Authentication Protocol, Authentication Password, Privacy Protocol and Privacy Password, are ignored. For SNMPv3
+        agents, values of Read Community and Write Community are ignored.
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image002.gif" alt="*" height="13" width="13"/>
+                <b>MIB Files tab</b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image048.jpg" border="0" height="218" width="453"/>
+    </p>
+    <p>
+    </p>
+    <p>
+        This table stores file names of loaded MIBs. You can add or delete MIBs from this table.
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+                </li><li> 
+  
+        <b>
+            Bookmarks menu
+            <br clear="all"/>
+        </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        This menu contains all your stored bookmarks. Bookmarks are links to OIDs and their associated operations that you use frequently. By adding an OID to
+        your bookmarks, you can use it by simply clicking its name, instead of having to type it again.
+    </p>
+    <p>
+    </p>
+    <br clear="all"/>
+    <p>
+    </p>
+    <p>
+        </li></ul>
+
+    </p>
+    <p>
+    </p>
+    <p>
+          <h3>Toolbar</h3>
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image050.jpg" border="0" height="60" width="576"/>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+    <ul>
+    <li> <b>Address field </b>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        Enter the IP address and port number of SNMP agent, in the format of "ipAddress@port" or "ipAddress:port" (IPv4 only). The "@port" or ":port" are not
+        necessary if the port number is 161.
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+    </li><li>
+        <b>Address Group </b>
+         is a group of IP addresses, including their port numbers. It starts with "g " in the address field. Address group makes it much easier to perform SNMP
+        operations against multiple agents. An example:
+    </p>
+    <p>
+    </p>
+    <p>
+        <i>192.168.1.1, 192.168.1.2:1611, 192.168.2.1</i>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        Other properties of an SNMP agent, such as community, SNMPv3 parameters, cannot be specified in the group address dialog.  To change these properties,
+        you can enter the IP address into the address field, and press "Advanced" button to change other properties. Then the IP address in the group will
+        automatically reflect the changes.
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+    </li><li>
+           <b>Advanced button</b>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        Customize the properties of current SNMP agent, such as community names, SNMPv3 USM parameters, etc.
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        For an SNMPv3 agent, its engineID, authKey and privKey properties will be updated after first successful query.
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    </li><li>
+    <p>
+        <a name="OID"><b>OID field </b></a>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image051.jpg" border="0" height="43" width="289"/>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        Object identifier to be used for SNMP queries. This field is updated when the user selects a node in MIB tree or a row in the result table. You can
+        also type new value directly in this field.
+    </p>
+    <p>
+    </p>
+    </li><li>
+    <p>
+           <b>Operations </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        Select one of the SNMP operations from the list. Operation will be performed immediately when it is selected.
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    </li><li>
+    <p>
+        <b>Go button </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        Press this button to perform the selected operation.
+    </p>
+    <p>
+    </p>
+
+    </li></ul>
+
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+         <h3>MIB Tree Pane</h3>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b>
+            <img src="images/clip_image052.gif" border="0" height="288" width="351"/>
+        </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        It is divided into two panes: Tree pane on the top and properties pane on the bottom.
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <ul><li>
+    <p>
+           <b>Tree Pane </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        Display MIB trees. Right click on a node, a popup menu shows up. Depending on the node properties, if right clicking on a root node of a MIB module,
+popup menu includes three menu items: <i>Find, Expand and Unload MIB</i>. On other nodes, their respective popup menus have only two menu items:        <i>Find and Expand</i>.
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <table border="1" cellpadding="0" cellspacing="0" width="480">
+        <tbody>
+            <tr>
+                <td valign="top" width="110">
+                    <p>
+                        <b>
+                            <img src="images/clip_image053.gif" border="0" height="22" width="23"/>
+                        </b>
+                    </p>
+                </td>
+                <td valign="top" width="370">
+                    <p>
+                        Table node
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="110">
+                    <p>
+                        <b>
+                            <img src="images/clip_image054.gif" border="0" height="22" width="23"/>
+                        </b>
+                    </p>
+                </td>
+                <td valign="top" width="370">
+                    <p>
+                        Table entry node
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="110">
+                    <p>
+                        <b>
+                            <img src="images/clip_image055.gif" border="0" height="16" width="16"/>
+                        </b>
+                    </p>
+                </td>
+                <td valign="top" width="370">
+                    <p>
+                        Read-write node
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="110">
+                    <p>
+                        <b>
+                            <img src="images/clip_image056.gif" border="0" height="16" width="16"/>
+                        </b>
+                    </p>
+                </td>
+                <td valign="top" width="370">
+                    <p>
+                        Read-create node
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="110">
+                    <p>
+                        <b>
+                            <img src="images/clip_image057.gif" border="0" height="16" width="17"/>
+                        </b>
+                    </p>
+                </td>
+                <td valign="top" width="370">
+                    <p>
+                        Index node
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="110">
+                    <p>
+                        <b>
+                            <img src="images/clip_image058.gif" border="0" height="16" width="16"/>
+                        </b>
+                    </p>
+                </td>
+                <td valign="top" width="370">
+                    <p>
+                        Leaf node, usually read-only
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+                                <i>            Table: Icon descriptions</i>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        Double click on a scalar node, its value will be queried against the agent specified on the toolbar. If double click on a tabular node (such as
+        ifSpeed), then its subtree values will be queried against the agent.
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    </li><li>
+    <p>
+           <b>Node Properties Pane </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        Display properties of selected node. Tooltips of second column show more information.
+    </p>
+    <p>
+    </p>
+    </li></ul>
+
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+          <h3>Result Pane</h3>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b>
+            <img src="images/clip_image060.jpg" border="0" height="190" width="391"/>
+        </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        Display the result of SNMP queries in a table. If a octet string is displayed in hex format, double click on it to toggle the display mode.
+    <p>
+        Buttons on the right toolbar:
+    </p>
+    <p>
+    </p>
+    <table border="1" cellpadding="0" cellspacing="0" width="90%">
+        <tbody>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>Stop button</b>
+                    </p>
+                </td>
+                <td valign="top" width="370">
+                    <p>
+                        Stop pending SNMP queries.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>Clear Table button</b>
+                    </p>
+                </td>
+                <td valign="top" width="370">
+                    <p>
+                        Clear the result table.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>Raw Data button</b>
+                    </p>
+                </td>
+                <td valign="top" width="370">
+                    <p>
+                        Launch a new dialog window showing the raw results of SNMP queries.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>Find button</b>
+                    </p>
+                </td>
+                <td valign="top" width="370">
+                    <p>
+                        Find strings in the result pane.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>Save button</b>
+                    </p>
+                </td>
+                <td valign="top" width="370">
+                    <p>
+                        Save values in result pane to an XML file.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>Open button</b>
+                    </p>
+                </td>
+                <td valign="top" width="370">
+                    <p>
+                        Load values from an XML file to the result pane.
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <b>
+        <br clear="all"/>
+    </b>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <h2>Trap Receiver</h2>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+          <h3>Main Window</h3>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        Trap receiver can be opened from MIB browser window or started independently.
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/trap.png" border="0" />
+    </p>
+
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        Trap receiver window is divided into two panels. The upper panel displays summaries of traps. The lower panel displays details of selected trap.
+    </p>
+    <p>
+    </p>
+    <table border="0" cellpadding="0" cellspacing="0" width="90%">
+        <tbody>
+            <tr><th colspan=2>Menu Items of Trap Receiver</th></tr>
+            <tr>
+                <td style="border:0px" valign="top" width="212">
+                    <p>
+                        <b>Trap Filter button</b>
+                    </p>
+                </td>
+                <td style="border:0px" valign="top" width="252">
+                    <p>
+                        Apply filter to all received traps. A trap can be blocked based on its IP address and OID.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:0px" valign="top" width="212">
+                    <p>
+                        <b>Start Trap Receiver button</b>
+                    </p>
+                </td>
+                <td style="border:0px" valign="top" width="252">
+                    <p>
+                        Start the trap receiver. It'll be grayed out if trap receiver is running. Trap receiver is not started automatically when the window is
+                        opened.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:0px" valign="top" width="212">
+                    <p>
+                        <b>Stop button</b>
+                    </p>
+                </td>
+                <td style="border:0px" valign="top" width="252">
+                    <p>
+                        Stop the trap receiver.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:0px" valign="top" width="212">
+                    <p>
+                        <b>Add Trap Rule</b>
+                    </p>
+                </td>
+                <td style="border:0px" valign="top" width="252">
+                    <p>
+
+                    Add a new rule for processing traps. If a row of trap table is selected, then the dialog will populate the fields with some data from the row.
+                    </p>
+                    <p>
+                    All rules will be applied for an incoming trap, except that a rule specifies that the trap should be ignored. Rules are ordered by their names. So you can modify
+                    rule's name to change its execution order. For example, rule A and B have the same conditions, but A sets severity to low and B sets severity to medium. Because
+                    B is applied after A, the final severity will be set to medium.
+                </td>
+            </tr>
+            <tr><td style="border:0px;padding-left:40px;" colspan=2> Screenshot of adding trap rule: <img src="images/addrule.png" border="0" /><p>
+                    <b>Rule Conditions:</b><br>
+                    <table border="1" cellpadding="0" cellspacing="0" width="90%">
+                    <tr>
+                        <td valign="top">
+                            <p>
+                                <i>snmpTrapOID is</i>
+                            </p>
+                        </td>
+                        <td valign="top" width="370">
+                            <p>
+                            The snmpTrapOID in SNMPv2 traps, or "entepriseOID + '.0.' + specific" for SNMPv1 traps.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <p>
+                                <i>Allowed trap source IPs</i>
+                            </p>
+                        </td>
+                        <td valign="top" width="370">
+                            <p>
+                            The trap originator's IPs, separated by comma.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <p>
+                                <i>Raw values of variable bindingds contains</i>
+                            </p>
+                        </td>
+                        <td valign="top" width="370">
+                            <p>
+                            You can enter multiple keywords here, separated by pipe or comma. If one of the keywords are found, then the condition is considered met.<p> The value here is the raw value, that is, the value received from the agent in its original format and it is not translated to
+                            more readable string.
+                            </p>
+                        </td>
+                    </tr>
+                    </table>
+<p>
+
+                   <b>Rule Actions:</b><br>
+                    <table border="1" cellpadding="0" cellspacing="0" width="90%">
+              <tr>
+                <td valign="top" width="168">
+                    <p>
+                        <b>Play sound</b>
+                    </p>
+                </td>
+                <td valign="top" width="296">
+                    <p>
+                        Play sound when conditions are met.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="168">
+                    <p>
+                        <b>Execute command</b>
+                    </p>
+                </td>
+                <td valign="top" width="296">
+                    <p>
+                        Execute a command when conditions are met.
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td valign="top" width="168">
+                    <p>
+                        <b>Send email</b>
+                    </p>
+                </td>
+                <td valign="top" width="296">
+                    <p>
+                        Send out email when conditions are met.
+                    </p>
+                </td>
+            </tr>
+
+
+                                <tr>
+                <td valign="top" width="168">
+                    <p>
+                        <b>Issue SNMP request</b>
+                    </p>
+                </td>
+                <td valign="top" width="296">
+                    <p>
+                        Issue an SNMP GET or SET request against an agent when conditions are met.
+                    </p>
+                </td>
+            </tr>
+
+            </table>
+
+
+            </td></tr>
+
+            <tr>
+                <td style="border:0px" valign="top" width="212">
+                    <p>
+                        <b>Manage Rules</b>
+                    </p>
+                </td>
+                <td style="border:0px" valign="top" width="252">
+                    <p>
+                    Manage rules, including editing and deleting rules.
+                    </p>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td style="border:0px" valign="top" width="212">
+                    <p>
+                        <b>Clear Table button</b>
+                    </p>
+                </td>
+                <td style="border:0px" valign="top" width="252">
+                    <p>
+                        Clear the content of the trap table.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:0px" valign="top" width="212">
+                    <p>
+                        <b>Export Table to CSV</b>
+                    </p>
+                </td>
+                <td style="border:0px" valign="top" width="252">
+                    <p>
+                        Export table data to a CSV file.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td style="border:0px" valign="top" width="212">
+                    <p>
+                        <b>Options</b>
+                    </p>
+                </td>
+                <td style="border:0px" valign="top" width="252">
+                    <p>
+                        Trap receiver's settings.
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <br clear="all"/>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+          <h3>Options</h3>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <ul><li>
+    <p>
+           <b>General Tab</b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b>
+            <img src="images/clip_image064.jpg" border="0" height="346" width="523"/>
+        </b>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <table border="1" cellpadding="0" cellspacing="0" width="90%">
+        <tbody>
+            <tr>
+                <td valign="top" width="168">
+                    <p>
+                        <b>Trap</b>
+                        <b> Port</b>
+                    </p>
+                </td>
+                <td valign="top" width="296">
+                    <p>
+                        The port number of trap receiver.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="168">
+                    <p>
+                        <b>Forward Trap To</b>
+                    </p>
+                </td>
+                <td valign="top" width="296">
+                    <p>
+                        Forward traps to another trap receiver in SNMPv1 PDUs.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="168">
+                    <p>
+                        <b>Save trap data to database</b>
+                    </p>
+                </td>
+                <td valign="top" width="296">
+                    <p>
+                        If enabled, received traps will be saved to the bundled database. Then they can be loaded again.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="168">
+                    <p>
+                        <b>Show trap message window</b>
+                    </p>
+                </td>
+                <td valign="top" width="296">
+                    <p>
+                        If enabled, a trap message window will show up around system tray when a new trap is received.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="168">
+                    <p>
+                        <b>Play sound</b>
+                    </p>
+                </td>
+                <td valign="top" width="296">
+                    <p>
+                        Play sound when a trap is received.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="168">
+                    <p>
+                        <b>Execute command</b>
+                    </p>
+                </td>
+                <td valign="top" width="296">
+                    <p>
+                        Execute a command when a trap is received.
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <table border="1" cellpadding="0" cellspacing="0" width="90%">
+        <tbody>
+            <tr>
+                <th colspan="2" valign="top" >
+                        Tokens used in execute command
+                </th>
+            </tr>
+            <tr>
+                <td valign="top" width="80">
+                    <p>
+                        <b>$ip</b>
+                    </p>
+                </td>
+                <td valign="top" width="384">
+                    <p>
+                        IP address of trap originator
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="80">
+                    <p>
+                        <b>$severity</b>
+                    </p>
+                </td>
+                <td valign="top" width="384">
+                    <p>
+                        Severity as configured in the trap rule
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="80">
+                    <p>
+                        <b>$description</b>
+                    </p>
+                </td>
+                <td valign="top" width="384">
+                    <p>
+                        Description as configured in the trap rule
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="80">
+                    <p>
+                        <b>$oid</b>
+                    </p>
+                </td>
+                <td valign="top" width="384">
+                    <p>
+                        Trap OID
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="80">
+                    <p>
+                        <b>$ts</b>
+                    </p>
+                </td>
+                <td valign="top" width="384">
+                    <p>
+                        Timestamp value
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="80">
+                    <p>
+                        <b>$sp</b>
+                    </p>
+                </td>
+                <td valign="top" width="384">
+                    <p>
+                        Value of SNMPv1 trap's specific field
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="80">
+                    <p>
+                        <b>$vb.all</b>
+                    </p>
+                </td>
+                <td valign="top" width="384">
+                    <p>
+                        All variable bindings
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="80">
+                    <p>
+                        <b>$vb.n</b>
+                    </p>
+                </td>
+                <td valign="top" width="384">
+                    <p>
+                        The <i>nth</i> variable binding.  For example, $vb.1 is the first variable binding, $vb.2 is the second one.
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br clear="all"/>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    </li></li>
+    <p>
+           <b>SMTP Tab</b>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <b>
+            <img src="images/clip_image066.jpg" border="0" height="393" width="528"/>
+        </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        This tab specifies whether to enable forwarding SNMP traps via email. If it is enabled, at lease the primary SMTP server should be configured. If the
+        secondary SMTP server is also configured, it will be used for sending emails when the primary SMTP server fails.
+    </p>
+    <p>
+    </p>
+    <br clear="all"/>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    </li><li>
+    <p>
+           <b>Email Template Tab   </b>  <i>(only available in enterprise edition)</i>
+    </p>
+    <p>
+    </p>
+    <p>
+        <img src="images/clip_image068.jpg" border="0" height="382" width="517"/>
+    </p>
+    <p>
+    </p>
+    <p>
+        If the email template is enabled, all emails sent out from the trap module will use the template.
+    </p>
+    <p>
+    </p>
+    <table border="1" cellpadding="0" cellspacing="0" width="90%">
+        <tbody>
+            <tr>
+                <th colspan="2" valign="top" >
+                        Tokens used in template
+                </th>
+            </tr>
+            <tr>
+                <td valign="top" width="80">
+                    <p>
+                        <b>$ip</b>
+                    </p>
+                </td>
+                <td valign="top" width="384">
+                    <p>
+                        IP address of trap originator
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="80">
+                    <p>
+                        <b>$oid</b>
+                    </p>
+                </td>
+                <td valign="top" width="384">
+                    <p>
+                        Trap OID
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="80">
+                    <p>
+                        <b>$ts</b>
+                    </p>
+                </td>
+                <td valign="top" width="384">
+                    <p>
+                        Timestamp value
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="80">
+                    <p>
+                        <b>$sp</b>
+                    </p>
+                </td>
+                <td valign="top" width="384">
+                    <p>
+                        Value of SNMPv1 trap's specific field
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="80">
+                    <p>
+                        <b>$trap</b>
+                    </p>
+                </td>
+                <td valign="top" width="384">
+                    <p>
+                        The whole trap message in HTML format, as displayed in the lower panel of trap receiver.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="80">
+                    <p>
+                        <b>$vb.all</b>
+                    </p>
+                </td>
+                <td valign="top" width="384">
+                    <p>
+                        All variable bindings
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="80">
+                    <p>
+                        <b>$vb.n</b>
+                    </p>
+                </td>
+                <td valign="top" width="384">
+                    <p>
+                        The <i>nth</i> variable binding.  For example, $vb.1 is the first variable binding, $vb.2 is the second one.
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br clear="all"/>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    </li><li>
+    <p>
+           <b>SNMPv3 Trap Receiver Tab</b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <b>
+            <img src="images/clip_image070.jpg" border="0" height="388" width="523"/>
+        </b>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        This table stores the properties of SNMPv3 trap senders. You can add or delete items from this table.
+    </p>
+    <p>
+    </p>
+    </li></ul>
+
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        <h2>Command Line Options</h2>
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        Command line tools are located at $INSTALL_DIR\bin directory.
+        <br/>
+        <br/>
+        <b></b>
+    </p>
+    <p>
+    </p>
+    <ul><li>
+    <p>
+          MIB browser can be launched from the command line with the following options:
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <table border="1" cellpadding="0" cellspacing="0" width="90%">
+        <tbody>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>browser.bat  -h (or ¨Chelp, -?)</b>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p>
+                        Print usage
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>-h &lt;h&gt;</b>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p>
+                        Specify the host name or IP address of SNMP agent.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>-p &lt;p&gt;</b>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p>
+                        Specify the port number of the SNMP agent. Default value is 161.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>-v &lt;1|2|3&gt;</b>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p>
+                        Specify the SNMP version number. Possible values are 1, 2, and 3.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>-c &lt;c&gt;</b>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p>
+                        Specify the SNMP community name. Default value is public.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>-o &lt;o&gt;</b>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p>
+                        Specify OID.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>-a &lt;a&gt;</b>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p>
+                        Specify the SNMP action. Possible values are (get|getnext|getsubtree|walk|gettable).
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>-f &lt;filename&gt;</b>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p>
+                        Output CSV file name. Used with gettable action.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>-s &lt;filename&gt;</b>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p>
+                        Open a saved session on startup.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        <b>-w</b>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p>
+                        Open watch tab on startup.
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    </li><li>
+    <p>
+          Command Line Graph Tool
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <i>graph.bat </i>
+        script is used<i> </i>to record an SNMP agent's values to a file, which can be opened by the MIB browser using the "File/Open Graph Data" menu.
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        Running <i>graph.bat </i>without any arguments will print usage and examples.
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    </li><li>
+    <p>
+          Command Line SNMP Tools
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <i>snmpget.bat </i>
+        script is used<i> </i>to issue SNMP GET request.
+    </p>
+    <p>
+    </p>
+    <p>
+        <i>snmpgetnext.bat </i>
+        script is used<i> </i>to issue SNMP GET-NEXT request.
+    </p>
+    <p>
+    </p>
+    <p>
+        <i>snmpset.bat </i>
+        script is used<i> </i>to issue SNMP SET request.
+    </p>
+    <p>
+    </p>
+    <p>
+        <i>trap.bat </i>
+        script is used<i> </i>to send out SNMP traps.
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    </li></ul>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <br clear="all"/>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <h2>Keyboard Shortcuts</h2>
+    </p>
+    <p>
+    </p>
+    <table border="1" cellpadding="0" cellspacing="0" width="90%">
+        <tbody>
+            <tr>
+                <td valign="top">
+                    <p>
+                        CTRL-L
+                    </p>
+                </td>
+                <td valign="top" width="517">
+                    <p>
+                        Load MIB file
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        CTRL-F
+                    </p>
+                </td>
+                <td valign="top" width="517">
+                    <p>
+                        Find a MIB node.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        CTRL-G
+                    </p>
+                </td>
+                <td valign="top" width="517">
+                    <p>
+                        Perform SNMP GET operation.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        CTRL-N
+                    </p>
+                </td>
+                <td valign="top" width="517">
+                    <p>
+                        Perform SNMP GET-NEXT operation.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        CTRL-E
+                    </p>
+                </td>
+                <td valign="top" width="517">
+                    <p>
+                        Perform Get-Subtree operation.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        CTRL-S
+                    </p>
+                </td>
+                <td valign="top" width="517">
+                    <p>
+                        Perform SNMP SET operation.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        CTRL-W
+                    </p>
+                </td>
+                <td valign="top" width="517">
+                    <p>
+                        Perform walk operation.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        CTRL-P
+                    </p>
+                </td>
+                <td valign="top" width="517">
+                    <p>
+                        Stop current operation.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        Enter
+                    </p>
+                </td>
+                <td valign="top" width="517">
+                    <p>
+                        If Operations or Go button have focus, pressing "Enter" key will repeat last operation.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        CTRL-T
+                    </p>
+                </td>
+                <td valign="top" width="517">
+                    <p>
+                        Table view
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        CTRL-R
+                    </p>
+                </td>
+                <td valign="top" width="517">
+                    <p>
+                        Plot graph.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        CTRL-D
+                    </p>
+                </td>
+                <td valign="top" width="517">
+                    <p>
+                        Add to watches
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        CTRL-O
+                    </p>
+                </td>
+                <td valign="top" width="517">
+                    <p>
+                        Open watches panel
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <p>
+                        CTRL-I
+                    </p>
+                </td>
+                <td valign="top" width="517">
+                    <p>
+                        Open trap receiver panel
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <br clear="all"/>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <p>
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p align="center">
+        <h2>About different editions</h2>
+    </p>
+    <p>
+    </p>
+    <p align="center">
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <p>
+        The free personal edition is intended exclusively for private use on a single workstation. You may copy the complete program package and pass it on to
+        others for private use only. The free personal edition may not be used for commercial or professional purposes.
+    </p>
+    <p>
+    </p>
+    <p>
+        The professional edition has many more features and can be used for commercial or professional purposes.
+    </p>
+    <p>
+    </p>
+    <p>
+        The enterprise edition has more powerful trap receiver and monitoring features.
+    </p>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <br clear="all"/>
+    <p>
+    </p>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+    <h1>Features Table</h1>
+    <p>
+    </p>
+    <p align="center">
+        <b> </b>
+    </p>
+    <p>
+    </p>
+    <table border="1" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+            <tr>
+                <th width="50%">
+                        Feature
+                </th>
+                <th >
+                        Personal Edition
+                </th>
+                <th >
+                        Professional Edition
+                </th>
+                <th >
+                        Enterprise Edition
+                </th>
+            </tr>
+            <tr>
+                <td valign="top" width="45%">
+                    <p>
+                        Runs on Windows, Mac OS X, Linux and other UNIX platforms
+                    </p>
+                </td>
+                <td valign="top" width="16%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top" width="18%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="45%">
+                    <p>
+                        Supports basic SNMP operations
+                    </p>
+                </td>
+                <td valign="top" width="16%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top" width="18%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="45%">
+                    <p>
+                        Table view for MIB tables
+                    </p>
+                </td>
+                <td valign="top" width="16%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top" width="18%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="45%">
+                    <p>
+                        SNMPv3 USM user management
+                    </p>
+                </td>
+                <td valign="top" width="16%">
+                    <p align="center">
+                         
+                    </p>
+                </td>
+                <td valign="top" width="18%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="45%">
+                    <p>
+                        Trap Receiver
+                    </p>
+                </td>
+                <td valign="top" width="16%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top" width="18%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="45%">
+                    <p>
+                        Trap Sender
+                    </p>
+                </td>
+                <td valign="top" width="16%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top" width="18%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="45%">
+                    <p>
+                        Supports IPv6
+                    </p>
+                </td>
+                <td valign="top" width="16%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top" width="18%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="45%">
+                    <p>
+                        Supports SNMPv1/v2c
+                    </p>
+                </td>
+                <td valign="top" width="16%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top" width="18%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="45%">
+                    <p>
+                        Supports loading any standard or private MIB
+                    </p>
+                </td>
+                <td valign="top" width="16%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top" width="18%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="45%">
+                    <p>
+                        Maximum number of MIBs loaded
+                    </p>
+                </td>
+                <td valign="top" width="16%">
+                    <p align="center">
+                        10
+                    </p>
+                </td>
+                <td valign="top" width="18%">
+                    <p align="center">
+                        No restrictions
+                    </p>
+                </td>
+                <td valign="top">
+                    <p align="center">
+                        No restrictions
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="45%">
+                    <p>
+                        Free
+                    </p>
+                </td>
+                <td valign="top" width="16%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top" width="18%">
+                    <p>
+                         
+                    </p>
+                </td>
+                <td valign="top">
+                    <p>
+                         
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="45%">
+                    <p>
+                        Supports SNMPv3
+                    </p>
+                </td>
+                <td valign="top" width="16%">
+                    <p>
+                         
+                    </p>
+                </td>
+                <td valign="top" width="18%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="45%">
+                    <p>
+                        Watches
+                    </p>
+                </td>
+                <td valign="top" width="16%">
+                    <p>
+                         
+                    </p>
+                </td>
+                <td valign="top" width="18%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="45%">
+                    <p>
+                        Address Group
+                    </p>
+                </td>
+                <td valign="top" width="16%">
+                    <p>
+                         
+                    </p>
+                </td>
+                <td valign="top" width="18%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="45%">
+                    <p>
+                        Network discovery
+                    </p>
+                </td>
+                <td valign="top" width="16%">
+                    <p>
+                         
+                    </p>
+                </td>
+                <td valign="top" width="18%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="45%">
+                    <p>
+                        ICMP Ping tool
+                    </p>
+                </td>
+                <td valign="top" width="16%">
+                    <p>
+                         
+                    </p>
+                </td>
+                <td valign="top" width="18%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="45%">
+                    <p>
+                        ICMP Traceroute tool
+                    </p>
+                </td>
+                <td valign="top" width="16%">
+                    <p>
+                         
+                    </p>
+                </td>
+                <td valign="top" width="18%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="45%">
+                    <p>
+                        Performance graph
+                    </p>
+                </td>
+                <td valign="top" width="16%">
+                    <p>
+                         
+                    </p>
+                </td>
+                <td valign="top" width="18%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="45%">
+                    <p>
+                        Port view
+                    </p>
+                </td>
+                <td valign="top" width="16%">
+                    <p>
+                         
+                    </p>
+                </td>
+                <td valign="top" width="18%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="45%">
+                    <p>
+                        Switch port mapper
+                    </p>
+                </td>
+                <td valign="top" width="16%">
+                    <p>
+                         
+                    </p>
+                </td>
+                <td valign="top" width="18%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="45%">
+                    <p>
+                        Device snapshot
+                    </p>
+                </td>
+                <td valign="top" width="16%">
+                    <p>
+                         
+                    </p>
+                </td>
+                <td valign="top" width="18%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="45%">
+                    <p>
+                        Cisco device snapshot
+                    </p>
+                </td>
+                <td valign="top" width="16%">
+                    <p>
+                         
+                    </p>
+                </td>
+                <td valign="top" width="18%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="45%">
+                    <p>
+                        Compares devices
+                    </p>
+                </td>
+                <td valign="top" width="16%">
+                    <p>
+                         
+                    </p>
+                </td>
+                <td valign="top" width="18%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="45%">
+                    <p>
+                        Forwards traps via email
+                    </p>
+                </td>
+                <td valign="top" width="16%">
+                    <p>
+                         
+                    </p>
+                </td>
+                <td valign="top" width="18%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="45%">
+                    <p>
+                        Periodically refreshes MIB table
+                    </p>
+                </td>
+                <td valign="top" width="16%">
+                    <p>
+                         
+                    </p>
+                </td>
+                <td valign="top" width="18%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="45%">
+                    <p>
+                        Dynamic table row creation and deletion
+                    </p>
+                </td>
+                <td valign="top" width="16%">
+                    <p>
+                         
+                    </p>
+                </td>
+                <td valign="top" width="18%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="45%">
+                    <p>
+                        Rule engine for processing traps
+                    </p>
+                </td>
+                <td valign="top" width="16%">
+                    <p>
+                         
+                    </p>
+                </td>
+                <td valign="top" width="18%">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+                <td valign="top">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="45%">
+                    <p>
+                        Run as service (Trap Receiver &amp; Watches)
+                    </p>
+                </td>
+                <td valign="top" width="16%">
+                    <p>
+                         
+                    </p>
+                </td>
+                <td valign="top" width="18%">
+                    <p align="center">
+                         
+                    </p>
+                </td>
+                <td valign="top">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="45%">
+                    <p>
+                        Watch actions
+                    </p>
+                </td>
+                <td valign="top" width="16%">
+                    <p>
+                         
+                    </p>
+                </td>
+                <td valign="top" width="18%">
+                    <p align="center">
+                         
+                    </p>
+                </td>
+                <td valign="top">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="45%">
+                    <p>
+                        Email template
+                    </p>
+                </td>
+                <td valign="top" width="16%">
+                    <p>
+                         
+                    </p>
+                </td>
+                <td valign="top" width="18%">
+                    <p align="center">
+                         
+                    </p>
+                </td>
+                <td valign="top">
+                    <p align="center">
+                        <img src="images/clip_image071.gif" border="0" height="13" width="15"/>
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+         
+    </p>
+    <p>
+    </p>
+</div>
+
+</body>
+</html>
+

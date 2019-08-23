@@ -1,0 +1,78 @@
+<html>
+<head>
+<script type="text/javascript">
+function validate_email(field,alerttxt)
+{
+with (field)
+  {
+  apos=value.indexOf("@");
+  dotpos=value.lastIndexOf(".");
+  if (apos<1||dotpos-apos<2)
+    {alert(alerttxt);return false;}
+  else {return true;}
+  }
+}
+function validate_ref(field)
+{
+
+    if(field.value== "")
+    {
+        alert("Order reference number is required.");
+        return false;
+    }
+    
+    var strValidChars = "IRE0123456789./- ";
+    var blnResult = true;
+    var c;
+
+    for (i = 0; i < field.value.length ; i++)
+    {
+        c = field.value.charAt(i);
+        if (strValidChars.indexOf(c) == -1)
+        {
+            blnResult = false;
+        }
+    }
+
+    if(!blnResult)
+    {
+        alert("Order reference number is not valid.");
+    }
+    return blnResult;
+}
+</script>
+</head>
+
+<body bgcolor=white font>
+
+<h1>Request License File</h1>
+      <p>
+    <form action="http://www.ireasoning.com/send_email.php" method="POST" name="f1">
+        <input type="hidden" size="22" name="subject" value="License Request">
+        <input type="hidden" size="22" name="version" value="#VERSION#">
+        <input type="hidden" size="22" name="os" value="#OS#">
+        <input type="hidden" size="22" name="mac" value="#MAC#">
+        <input type="hidden" size="22" name="computer" value="#COMPUTER#">
+        <input type="hidden" size="22" name="enterprise" value="#ENTERPRISE#">
+
+      <table border=0 cellpadding="3" cellspacing="5">
+      <tr> <td><b>Your Email:</b></td><td><input type="text" size="22" name="from" value="#EMAIL#" ></td></tr>
+      <tr> <td><b>Company/Organization Name:</b></td><td><input type="text" size="22" name="company" value="#COMPANY#"></td></tr>
+      <tr> <td><b>Order Reference Number:</b></td><td><input type="text" size="22" name="order" value="#ORDER#"></td></tr>
+      <tr><td colspan=2 > &nbsp; </td> </tr>
+      <tr><td colspan=2 > License file will be emailed to you. So the email address must be correct.<p>Order reference number is required. 
+      If you do not know it, <br>please either contact sales@ireasoning.com or enter order date (such as 11/30/2010). </td> </tr>
+      <tr><td colspan=2 > &nbsp; </td> </tr>
+      <tr><td colspan=2 align=center>
+            <input type="button" value="Submit" 
+            onclick="if(validate_email(f1.from, 'Email field is either empty or invalid.') && validate_ref(f1.order)) f1.submit();"
+            > &nbsp; &nbsp; &nbsp;  <input type="reset" value="Reset">
+      </td>
+      </tr>
+      </table>
+      <p>
+    </form>
+
+</body>
+</html>
+

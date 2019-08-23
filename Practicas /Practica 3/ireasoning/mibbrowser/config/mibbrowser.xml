@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MibBrowser
+>
+  <!--
+  snmpRetries: number of retries for SNMP queries
+  snmpTimeout: timeout value for SNMP queries, in seconds
+  lenientParsing: if yes, some mal-formed MIBs are still acceptable. 
+                  "no" means parser is stricter and will reject more mal-formed mibs.
+  loggingLevel: logging level of logger. Possible values are: debug, info, warn, error, fatal. 
+                If the level is "debug", SNMP packet dump is also logged.
+  defaultTrapPort: default port number of trap receiver
+  -->
+  <properties
+   snmpRetries="0"
+   snmpTimeout="10"
+   singleTreeRoot="yes"
+   lenientParsing="yes"
+   loggingLevel="info"
+   defaultTrapPort="162"
+  />
+
+  <agentDefault
+   port="161"
+   readCommunity=""
+   writeCommunity=""
+   version="1"
+   User=""
+   authAlogrithm="MD5"
+   authPassword=""
+   privacyAlogrithm="DES"
+   privacyPassword=""
+   contextName=""
+  />
+
+  <!-- 
+  x: initial x-axis location of the browser window. -1 means center of the screen
+  y: initial y-axis location of the browser window. -1 means center of the screen
+  width: initial width of the window
+  height: initial height of the window
+  -->
+  <ui
+    x="-1"
+    y="-1"
+    width="800"
+    height="600"
+  />
+ 
+  <!-- 
+    pre-loaded MIBs. "name" is the mib file name. If it's not absolute path, it's assumed file
+    is located in the browser home directory.
+  -->
+  <mib name="mibs/RFC1213-MIB"/>
+  <mib name="mibs/HOST-RESOURCES-MIB"/>
+  
+  
+
+  <!-- SNMP Agent Properties-->
+  <agent
+   ipAddress="127.0.0.1"
+   port="161"
+   version="1"
+   readCommunity=""
+   writeCommunity=""
+   auth="MD5"
+   authPasswd=""
+   priv="DES"
+   privPasswd=""
+  />
+</MibBrowser>
